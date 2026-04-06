@@ -1,4 +1,4 @@
-# Obsidian + Git：AI Agent 知識庫建立手冊
+# (建置中，先不要使用) Obsidian + Git：AI Agent 知識庫建立手冊
 
 > 這份手冊整理從零開始建立 Obsidian + Git 知識庫的完整流程，適合非技術背景的人操作。
 >
