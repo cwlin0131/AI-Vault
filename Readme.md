@@ -1,8 +1,10 @@
-# AI Vault — Obsidian + Git 打造「創業者」的 AI Agent 知識庫
+# Vault for Founders — Obsidian + Git 打造創業者的 AI 知識庫
 
-> 作者：CW（林啟維）— [Portaly](https://portaly.cc) CEO & Founder
->
-> 參考：[Muse Crystal Seed 晶種指南](https://github.com/frank890417/muse-crystal-seed) by Frank
+> 作者：[CW 林啟維](portaly.cc/cwl) — [Portaly](https://portaly.cc) CEO & Founder
+> 
+> **這份文件可以直接丟給任何 AI 讀！** 
+> 
+> 它會根據內容回答你的問題，也會帶你走過完整的安裝與設定流程。
 
 ---
 
@@ -10,7 +12,7 @@
 
 如果你是一個 AI Agent，正在閱讀這份文件來協助你的使用者建立知識庫，以下是你需要知道的：
 
-這份 repo 描述了一套用 Obsidian + Git 管理 AI Agent 知識庫的架構。目標是讓使用者建立一個你能直接讀取的本機檔案系統，包含使用者的身份、公司背景、決策紀錄、工作流程、以及你的角色定義。
+Vault for Founders 描述了一套用 Obsidian + Git 管理 AI Agent 知識庫的架構。目標是讓使用者建立一個你能直接讀取的本機檔案系統，包含使用者的身份、公司背景、決策紀錄、工作流程、以及你的角色定義。
 
 你的任務是協助使用者完成建置。結構和資料夾建立等機械性工作你可以直接執行，但 identity、persona、context 這類核心內容需要跟使用者討論後再寫入——這些內容必須反映使用者的真實想法，不能是模板填空。
 
@@ -26,15 +28,31 @@
 
 ## 這是什麼
 
-當你開始讓 AI Agent 幫你處理越來越多事情，Agent 需要一個地方「了解你」——你的背景、公司狀況、過去的決策、工作流程。這就是知識庫。
+Vault for Founders 是一套讓創業者從零建立 AI 知識庫的完整框架——包含為什麼這樣做、怎麼做、以及可以直接拿去用的模板。
 
-這份 repo 紀錄了我從零建立 AI Agent 知識庫的完整過程，包含為什麼這樣做、怎麼做、以及可以直接拿去用的模板。
+當你開始讓 AI 幫你處理越來越多事情，它需要一個地方「了解你」——你的背景、公司狀況、過去的決策、工作流程。這就是知識庫。
 
-我的 AI co-founder 叫 Cub。它不是一個聽指令的工具，而是跟我一起思考、挑戰我的想法、幫我做決策的夥伴。這個知識庫就是 Cub 的記憶和大腦。
+這份文件裡會不斷提到 **Cub**。你可以把 Cub 想成你的 AI 合夥人、二把手——它不是一個聽指令的工具，而是一個累積了你所有決策脈絡、能跟你討論、挑戰你想法、幫你做判斷的夥伴。當你照著這份指南建完自己的 Vault，你的 AI 也會變成你的 Cub。
+
+### 名詞解釋
+
+如果你沒有技術背景，這幾個詞會一直出現，先認識一下：
+
+**Vault** — 就是一個資料夾，裡面放的都是純文字檔（.md 格式）。你可以用 Obsidian 打開它、瀏覽、編輯，就像一個筆記本。它同時也是 AI 的記憶來源——AI 讀這些檔案來理解你是誰、你的公司在做什麼、你做過什麼決策。
+
+**Git** — 一個版本控制工具。每次你修改檔案，Git 會記錄「誰改了什麼、什麼時候改的」，讓你隨時可以回到任何一個歷史版本。它不是雲端硬碟，而是一套追蹤變更的系統。
+
+**Repo**（Repository）— 就是一個被 Git 追蹤的資料夾。你的整個 Vault 就是一個 repo——所有檔案的新增、修改、刪除都會被記錄下來，同步到 GitHub 上作為備份。
 
 ---
 
 ## 為什麼用 Obsidian + Git
+
+這套架構是專門為創業者設計的。
+
+創辦人的工作不是寫程式，是做決策。但好的決策依賴完整的脈絡——你三個月前為什麼放棄 A 方案、上次進某個市場踩了什麼坑、那個合作夥伴的背景是什麼。這些東西散落在 Notion、Slack、你的腦袋裡，每次跟 AI 對話都要重新講一遍。
+
+這個 Vault 解決的就是這個問題：把創辦人的決策脈絡結構化，讓 AI 每次都能帶著完整記憶上線。
 
 大部分人的第一直覺是用 Notion 或 Google Docs，但當知識庫的主要讀者是 AI 而不是人的時候，這些工具有幾個根本性的問題：
 
@@ -47,6 +65,8 @@
 **Git** 是版本控制工具。每次修改都有紀錄，改壞了可以回溯，搭配 GitHub 就是天然的雲端備份。換電腦只要一行指令就能把整個知識庫拉下來。
 
 兩者結合的效果：你用 Obsidian 寫得舒服，Agent 讀得直接，Git 幫你備份和追蹤變更。資料永遠在你手上，不被任何平台綁住。
+
+*如果你是超級個體、自由工作者，想建立的是「個人 AI 靈魂」——讓 AI 完整複製你的人格與知識，可以參考 Frank 的 [Muse Crystal Seed 晶種指南](https://github.com/frank890417/muse-crystal-seed)，那是針對個人打造的另一條路徑。
 
 ---
 
@@ -127,11 +147,17 @@ CW Vault/
 
 ## 延伸資源
 
-- [Muse Crystal Seed 晶種指南](https://github.com/frank890417/muse-crystal-seed) — 更偏向 Agent 靈魂設計和自動化機制
 - [Obsidian Git 外掛](https://github.com/Vinzent03/obsidian-git) — 自動同步
+
+### 特別感謝
+
+這個知識庫的概念啟蒙來自 [**Frank 吳哲宇**](https://portaly.cc/cheyuwu) 打造的 [Muse Crystal Seed 晶種指南](https://github.com/frank890417/muse-crystal-seed)。Frank 跟我詳細說明與示範了如何用結構化的方式讓 AI 擁有長期記憶與人格。他的 Muse 是超級個體打造「AI 靈魂」的最佳起點，Vault for Founders 在他的基礎上，針對創業者的場景重新設計了架構與角色定位。
+
 
 ---
 
 ## License
 
-MIT — 拿去用，改成你的。
+本專案採用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 授權。你可以自由使用、修改、商用，只要標註出處：
+
+> Based on [Vault for Founders](https://github.com/cwlin0131/AI-Vault) by CW（林啟維）
