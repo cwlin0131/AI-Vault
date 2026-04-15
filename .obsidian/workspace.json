@@ -171,7 +171,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
@@ -181,11 +180,11 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "d2cfb56cc98eb42b",
+  "active": "62bbdedc2ceb6222",
   "lastOpenFiles": [
     "setup-guide.md",
-    "build-log.md",
     "Readme.md",
+    "build-log.md",
     "architecture.md",
     "README.md",
     "templates/after-action.md",
