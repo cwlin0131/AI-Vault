@@ -168,4 +168,4 @@ CW Vault/
 
 本專案採用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 授權。你可以自由使用、修改、商用，只要標註出處：
 
-> Based on [Vault for Founders](https://github.com/cwlin0131/AI-Vault) by CW（林啟維）                                                                                                                                                     
+> Based on [Vault for Founders](https://github.com/cwlin0131/AI-Vault) by CW（林啟維）

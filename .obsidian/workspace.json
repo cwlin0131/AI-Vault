@@ -11,10 +11,14 @@
             "id": "d2cfb56cc98eb42b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Readme.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "Readme"
             }
           }
         ]
@@ -167,6 +171,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
@@ -178,10 +183,11 @@
   },
   "active": "d2cfb56cc98eb42b",
   "lastOpenFiles": [
+    "setup-guide.md",
+    "build-log.md",
+    "Readme.md",
     "architecture.md",
     "README.md",
-    "build-log.md",
-    "setup-guide.md",
     "templates/after-action.md",
     "templates/agent-persona.md",
     "templates/memory-summary.md",
@@ -195,7 +201,6 @@
     "README.md.tmp.5.1776165490381",
     "README.md.tmp.5.1776165480802",
     "README.md.tmp.5.1776165471614",
-    "README.md.tmp.5.1776165223265",
-    "Readme.md"
+    "README.md.tmp.5.1776165223265"
   ]
 }
