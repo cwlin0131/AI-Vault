@@ -1,4 +1,4 @@
-# Vault for Founders — Obsidian + Git 打造創業者的 AI 知識庫
+# Vault for Founders — 打造合夥人等級的 AI Agent
 
 > 作者：[CW 林啟維](portaly.cc/cwl) — [Portaly](https://portaly.cc) CEO & Founder
 > 
