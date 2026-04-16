@@ -11,10 +11,14 @@
             "id": "d2cfb56cc98eb42b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Readme.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "Readme"
             }
           }
         ]
@@ -174,29 +178,56 @@
       "daily-notes:開啟今天的每日筆記": false,
       "templates:插入模板": false,
       "command-palette:開啟命令面板": false,
-      "bases:建立新的 base": false
+      "bases:建立新的 base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "d2cfb56cc98eb42b",
   "lastOpenFiles": [
-    "README.md.tmp.5.1776164376964",
-    "README.md.tmp.5.1776164371128",
-    "README.md.tmp.5.1776164366692",
-    "README.md.tmp.5.1776164357606",
-    "setup-guide.md",
-    "README.md",
-    "README.md.tmp.5.1776164007877",
-    "README.md.tmp.5.1776164000284",
-    "README.md.tmp.5.1776163984248",
-    "README.md.tmp.5.1776163970964",
-    "build-log.md",
-    "architecture.md",
-    "templates/after-action.md",
-    "templates/vault-readme.md",
-    "templates/memory-summary.md",
-    "templates/agent-persona.md",
-    "README.md.tmp.5.1776161939661",
+    "en/README.md",
+    "zh/README.md",
     "Readme.md",
-    "templates"
+    "zh/setup-guide.md",
+    "Readme.md.tmp.5.1776263016450",
+    "Readme.md.tmp.5.1776262828619",
+    "en/templates/cowork-instructions.md",
+    "en/templates/cowork-instructions.md.tmp.5.1776262821785",
+    "en/templates/after-action.md",
+    "en/templates/after-action.md.tmp.5.1776262810854",
+    "en/templates/memory-summary.md",
+    "en/templates/memory-summary.md.tmp.5.1776262801182",
+    "en/templates/agent-persona.md",
+    "en/templates/agent-persona.md.tmp.5.1776262795634",
+    "en/templates/vault-readme.md",
+    "en/templates/vault-readme.md.tmp.5.1776262784368",
+    "en/optimization-guide.md",
+    "en/optimization-guide.md.tmp.5.1776262758707",
+    "en/architecture.md",
+    "en/architecture.md.tmp.5.1776262724663",
+    "en/setup-guide.md",
+    "en/setup-guide.md.tmp.5.1776262702379",
+    "vault-en02.png",
+    "vault-en01.png",
+    "Vault_EN02.png",
+    "Vault_EN01.png",
+    "zh/templates/vault-readme.md",
+    "zh/templates/cowork-instructions.md",
+    "zh/templates/after-action.md",
+    "zh/templates/memory-summary.md",
+    "zh/templates/agent-persona.md",
+    "zh/optimization-guide.md",
+    "zh/build-log.md",
+    "zh/architecture.md",
+    "vault-zh02.png",
+    "vault-zh01.png",
+    "Vault_ZH02 1.png",
+    "Vault_ZH01 2.png",
+    "Vault_ZH02.png",
+    "Vault_ZH01 1.png",
+    "build-log.md",
+    "optimization-guide.md",
+    "architecture.md",
+    "setup-guide.md",
+    "templates/cowork-instructions.md"
   ]
 }
