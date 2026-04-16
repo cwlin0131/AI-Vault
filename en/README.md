@@ -20,6 +20,7 @@ Vault for Founders is a framework for managing an AI Agent's knowledge base usin
 4. Use [templates/](templates/) to scaffold the user's Vault
 5. Discuss core content with the user before writing it
 6. After setup, read [optimization-guide.md](optimization-guide.md) to help the user optimize retrieval efficiency (indexing, naming, tagging, memory cleanup)
+7. When memory-summary.md exceeds 50 lines, read [memory-scaling.md](memory-scaling.md) to help the user split into a two-layer memory architecture
 
 ---
 
@@ -109,6 +110,7 @@ For detailed steps, see [setup-guide.md](setup-guide.md).
 ├── setup-guide.md            ← Complete setup guide
 ├── architecture.md           ← Architecture design and trade-offs
 ├── optimization-guide.md     ← Post-setup optimization guide (indexing, naming, tagging, memory cleanup)
+├── memory-scaling.md         ← When memory outgrows a single file
 │
 └── templates/
     ├── vault-readme.md       ← Vault index template
