@@ -64,7 +64,26 @@ git branch -M main
 
 ---
 
-## 第五步：建立資料夾結構
+## 第五步：建立 .gitattributes 與 .gitignore（多機同步的地基）
+
+**這一步很關鍵，一開始就做好會省掉未來大量衝突。**
+
+這兩個檔案負責：
+
+- **`.gitattributes`**：統一所有檔案的換行符（LF），避免不同工具、不同電腦之間產生假 diff
+- **`.gitignore`**：忽略 Obsidian 本機設定（`.obsidian/`）和作業系統垃圾檔，避免被不必要的變動灌爆
+
+沒設的話，只要你**同步到第二台電腦**就會開始撞衝突，而且 diff 看起來像「整個檔案都被改了」，極難除錯。
+
+### 建立方式
+
+1. 複製 [templates/gitattributes.md](templates/gitattributes.md) 裡的設定內容，存成 `.gitattributes`（注意開頭的點）放在 Vault 根目錄
+2. 複製 [templates/gitignore.md](templates/gitignore.md) 裡的設定內容，存成 `.gitignore` 放在 Vault 根目錄
+3. 兩個模板檔裡都有完整說明跟使用情境，不確定時回去讀
+
+---
+
+## 第六步：建立資料夾結構
 
 在 Obsidian 裡建立以下資料夾（可以手動建，也可以讓 AI 幫你建）：
 
@@ -88,13 +107,17 @@ git branch -M main
 
 **agent-persona.md** 是 Agent 的靈魂。定義它的角色、跟你的協作方式、溝通風格、行為邊界。這份檔案決定了 Agent 是一個「照指令做事的工具」還是「能跟你討論的夥伴」。
 
+> ⚠️ **persona 不要填空 template，要跟 AI 對話後產生。** 每個 founder 的 AI 幕僚應該長得像他自己，不是複製貼上某個範本。模板裡有明確的討論流程指引，讓 AI 帶你完成。
+
 **memory-summary.md** 是長期記憶的精華版。Agent 每次啟動讀完這份，就能在幾秒內掌握你當前的焦點、重大決策、教訓。
+
+**voice-and-tone.md**（選用但推薦）是對外公開文稿的寫作規則。LinkedIn、README、媒體稿等場景用，避免 AI 寫出「一看就是 AI 寫的」內容。
 
 模板可以在 [templates/](templates/) 資料夾裡找到。
 
 ---
 
-## 第六步：第一次上傳
+## 第七步：第一次上傳
 
 ```
 git add .
@@ -106,7 +129,7 @@ git push -u origin main
 
 ---
 
-## 第七步：安裝 Obsidian Git 外掛（自動同步）
+## 第八步：安裝 Obsidian Git 外掛（自動同步）
 
 裝了這個外掛，就不用每次手動跑 git 指令，Obsidian 會自動幫你備份到 GitHub。
 
@@ -137,4 +160,4 @@ git push -u origin main
 
 ---
 
-*最後更新：2026/04/14*
+*最後更新：2026/04/17（新增 .gitattributes / .gitignore 步驟 + persona 對話提醒 + voice-and-tone 模板）*

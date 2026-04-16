@@ -18,7 +18,7 @@ Vault for Founders is a framework for managing an AI Agent's knowledge base usin
 2. Read [setup-guide.md](setup-guide.md) for step-by-step installation
 3. Read [architecture.md](architecture.md) for design decisions and trade-offs
 4. Use [templates/](templates/) to scaffold the user's Vault
-5. Discuss core content with the user before writing it
+5. **Important**: `agent-persona.md` and `voice-and-tone.md` are deeply personal. **Do not fill them in like a form.** Follow the discussion flow inside each template to walk the user through their own answers, layer by layer.
 6. After setup, read [optimization-guide.md](optimization-guide.md) to help the user optimize retrieval efficiency (indexing, naming, tagging, memory cleanup)
 
 ---
@@ -112,10 +112,13 @@ For detailed steps, see [setup-guide.md](setup-guide.md).
 │
 └── templates/
     ├── vault-readme.md       ← Vault index template
-    ├── agent-persona.md      ← Agent persona template
+    ├── agent-persona.md      ← Agent persona template (Identity + Soul + Persona, 3 layers)
     ├── memory-summary.md     ← Long-term memory summary template
     ├── after-action.md       ← After-action review template
-    └── cowork-instructions.md ← Cowork Global Instructions template
+    ├── cowork-instructions.md ← Cowork Global Instructions template (with Forced Rules section)
+    ├── voice-and-tone.md     ← Writing rules template for public content (avoid AI tell-tales)
+    ├── gitattributes.md      ← .gitattributes config template (for multi-machine sync)
+    └── gitignore.md          ← .gitignore config template (ignore .obsidian/ and local files)
 ```
 
 ---

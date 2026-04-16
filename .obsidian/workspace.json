@@ -11,10 +11,14 @@
             "id": "d2cfb56cc98eb42b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Readme.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "Readme"
             }
           }
         ]
@@ -177,7 +181,7 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "d2cfb56cc98eb42b",
+  "active": "62bbdedc2ceb6222",
   "lastOpenFiles": [
     "zh/templates/memory-summary.md",
     "zh/templates/vault-readme.md",

@@ -68,7 +68,26 @@ git branch -M main
 
 ---
 
-## Step 5: Build the Folder Structure
+## Step 5: Create `.gitattributes` and `.gitignore` (the foundation for multi-machine sync)
+
+**This step matters. Getting it right from day one saves a lot of conflict pain later.**
+
+These two files handle:
+
+- **`.gitattributes`**: enforces consistent line endings (LF) across all tools and machines, preventing fake diffs
+- **`.gitignore`**: ignores Obsidian's local settings (`.obsidian/`) and OS junk files, so they don't clog up your repo
+
+Without these, the moment you **sync to a second machine** conflicts will start. Worse, the diffs look like "every line of every file changed," making them hard to debug.
+
+### How to Set Up
+
+1. Copy the config from [templates/gitattributes.md](templates/gitattributes.md), save as `.gitattributes` (note the leading dot) in your Vault root
+2. Copy the config from [templates/gitignore.md](templates/gitignore.md), save as `.gitignore` in your Vault root
+3. Both template files include full explanations and context. Refer back if unsure.
+
+---
+
+## Step 6: Build the Folder Structure
 
 Create the following folders in Obsidian (you can do this manually or ask your AI to help):
 
@@ -92,13 +111,17 @@ Core files explained:
 
 **agent-persona.md** is the Agent's soul. It defines its role, how it collaborates with you, communication style, and behavioral boundaries. This file determines whether the Agent is a "tool that follows instructions" or a "partner that can think with you."
 
+> ⚠️ **Don't fill the persona template like a form. Build it through conversation with your AI.** Every founder's AI partner should feel like them, not a copy of a generic template. The template includes a clear discussion flow. Let the AI guide you.
+
 **memory-summary.md** is the distilled version of long-term memory. After reading this on startup, the Agent can grasp your current focus, major decisions, and lessons learned in seconds.
+
+**voice-and-tone.md** (optional but recommended) captures writing rules for public-facing content. Used for LinkedIn, README, press, etc. Prevents AI from generating content that "reads like AI wrote it."
 
 Templates are available in the [templates/](templates/) folder.
 
 ---
 
-## Step 6: First Push
+## Step 7: First Push
 
 ```
 git add .
@@ -110,7 +133,7 @@ You may see a GitHub login prompt — just sign in. Once complete, check your Gi
 
 ---
 
-## Step 7: Install Obsidian Git Plugin (Auto-Sync)
+## Step 8: Install Obsidian Git Plugin (Auto-Sync)
 
 With this plugin, you don't need to run git commands manually. Obsidian will automatically back up to GitHub.
 
@@ -141,4 +164,4 @@ Once configured, just write in Obsidian — it handles the rest.
 
 ---
 
-*Last updated: 2026/04/15*
+*Last updated: 2026/04/17 (added .gitattributes / .gitignore step + persona discussion note + voice-and-tone template)*
