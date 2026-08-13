@@ -8,10 +8,7 @@
 >
 > **v2.0** · Last updated: 2026/07/05 · [Changelog](CHANGELOG.md). v2 distills three months of daily use into three upgrades: index layering, attention budget, and layered-defense maintenance.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
-  <img src="hero-light.svg" alt="How the vault runs: a founder's raw context flows into the vault, the AI agent wakes up with full memory, and after-action writes new memory back.">
-</picture>
+<img src="hero-dark.svg" alt="How the vault runs: a founder's raw context flows into Cub the vault, every session starts with full memory, and after-action writes new memory back.">
 
 ---
 
