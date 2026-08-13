@@ -62,6 +62,8 @@ In the near future, we'll discuss increasingly important things with AI: product
 
 If this knowledge never disappears and keeps compounding, it grows into a super-cofounder for you: a partner that understands your entire company better than anyone, available 24/7, and never quits.
 
+![Catch what matters: the vault holds your decision context like a reservoir, always on tap for your AI](vault-catch-en.jpg)
+
 So why not just use Claude or ChatGPT's built-in memory? Because:
 
 - **Platform lock-in**: Your memory lives in Claude, GPT can't read it, and vice versa. Switching tools means starting from zero
