@@ -8,6 +8,11 @@
 >
 > **v2.0** · 最後更新：2026/07/05 · [版本紀錄](../CHANGELOG.md)。v2 把三個月每天實戰的經驗濃縮成三個升級：索引分層、attention budget、多層防禦維護。
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../hero-dark.svg">
+  <img src="../hero-light.svg" alt="Vault 的運行方式：founder 的原始 context 流進 vault，AI agent 每個 session 帶著完整記憶醒來，收官後把新記憶寫回 vault。">
+</picture>
+
 ---
 
 ## 給 AI Agent 的前言

@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 284" role="img" aria-label="A founder's raw context flows into the vault, the AI agent wakes up with full memory, and after-action writes new memory back into the vault.">
+  <defs>
+    <!-- light palette (white GitHub READMEs) · vault purple #7C3AED · founder amber #B45309 · fresh green #047857 · ink #0F172A -->
+
+    <marker id="vf-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#047857"/>
+    </marker>
+    <marker id="vf-arrow-back" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#B45309"/>
+    </marker>
+
+    <radialGradient id="vf-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="vf-cub"><circle cx="596" cy="124" r="38"/></clipPath>
+
+    <style>
+      .pulse   { animation: p 2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes p { 0%,100% { opacity: 1 } 50% { opacity: 0.4 } }
+      .pulse2  { animation: p 2s ease-in-out infinite; animation-delay: 0.6s; transform-origin: center; transform-box: fill-box; }
+      .pulse3  { animation: p 2s ease-in-out infinite; animation-delay: 1.2s; transform-origin: center; transform-box: fill-box; }
+      .flow    { stroke-dasharray: 5 7; animation: mv 1.4s linear infinite; }
+      @keyframes mv { from { stroke-dashoffset: 0 } to { stroke-dashoffset: -24 } }
+      .flow-slow { stroke-dasharray: 4 8; animation: mv 2.2s linear infinite; }
+      .heartbeat { animation: hb 1.3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes hb { 0%,100% { transform: scale(1) } 50% { transform: scale(1.3) } }
+      .spin    { animation: sp 11s linear infinite; transform-origin: 420px 158px; }
+      @keyframes sp { to { transform: rotate(360deg) } }
+
+      /* memory compounds: three .md files drop into the vault one by one, then the cycle restarts */
+      .file1 { animation: f1 9s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes f1 { 0%,5% { opacity: 0; transform: translateY(-9px) } 11%,93% { opacity: 1; transform: translateY(0) } 98%,100% { opacity: 0 } }
+      .file2 { animation: f2 9s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes f2 { 0%,35% { opacity: 0; transform: translateY(-9px) } 41%,93% { opacity: 1; transform: translateY(0) } 98%,100% { opacity: 0 } }
+      .file3 { animation: f3 9s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes f3 { 0%,65% { opacity: 0; transform: translateY(-9px) } 71%,93% { opacity: 1; transform: translateY(0) } 98%,100% { opacity: 0 } }
+    </style>
+  </defs>
+
+  <!-- section labels -->
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" letter-spacing="0.22em" font-weight="700">
+    <text x="28"  y="30" fill="#B45309">FOUNDER · RAW</text>
+    <text x="420" y="30" fill="#7C3AED" text-anchor="middle">VAULT · COMPOUNDING</text>
+    <text x="852" y="30" fill="#047857" text-anchor="end">AGENT · WAKES UP READY</text>
+  </g>
+
+  <!-- ====================== LEFT: RAW CONTEXT ====================== -->
+  <g font-family="Inter, -apple-system, system-ui, sans-serif">
+    <!-- decision -->
+    <g transform="translate(16,52)">
+      <rect x="0" y="0" width="300" height="48" rx="10" fill="rgba(124,58,237,0.08)"/>
+      <g transform="translate(22,24)">
+        <circle cx="0" cy="0" r="8.5" fill="none" stroke="#7C3AED" stroke-width="1.4"/>
+        <path d="M-3.5 0.5 L-1 3 L3.5 -2.5" fill="none" stroke="#7C3AED" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="48" y="22" font-size="14" font-weight="700" fill="#0F172A">decision</text>
+      <text x="48" y="38" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="rgba(15,23,42,0.65)">pricing model locked · <tspan fill="#047857" font-weight="700">now</tspan></text>
+      <circle class="pulse" cx="284" cy="24" r="4.2" fill="#7C3AED"/>
+    </g>
+
+    <!-- meeting -->
+    <g transform="translate(16,108)">
+      <rect x="0" y="0" width="300" height="48" rx="10" fill="rgba(180,83,9,0.08)"/>
+      <g transform="translate(22,24)">
+        <rect x="-3" y="-9" width="6" height="11" rx="3" fill="#B45309"/>
+        <path d="M-7 0 Q -7 7 0 7 Q 7 7 7 0" stroke="#B45309" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <line x1="0" y1="7" x2="0" y2="10" stroke="#B45309" stroke-width="1.3" stroke-linecap="round"/>
+      </g>
+      <text x="48" y="22" font-size="14" font-weight="700" fill="#0F172A">meeting</text>
+      <text x="48" y="38" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="rgba(15,23,42,0.65)">investor call notes · <tspan fill="#047857" font-weight="700">2m</tspan></text>
+      <circle class="pulse2" cx="284" cy="24" r="4.2" fill="#7C3AED"/>
+    </g>
+
+    <!-- lesson -->
+    <g transform="translate(16,164)">
+      <rect x="0" y="0" width="300" height="48" rx="10" fill="rgba(15,23,42,0.05)"/>
+      <g transform="translate(22,24)">
+        <path d="M1.5 -9 L-4.5 1 L-0.5 1 L-1.5 9 L4.5 -1 L0.5 -1 Z" fill="#0F172A"/>
+      </g>
+      <text x="48" y="22" font-size="14" font-weight="700" fill="#0F172A">lesson</text>
+      <text x="48" y="38" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="rgba(15,23,42,0.65)">ship smaller, faster · <tspan fill="#047857" font-weight="700">1h</tspan></text>
+      <circle class="pulse3" cx="284" cy="24" r="4.2" fill="#7C3AED"/>
+    </g>
+
+    <!-- idea -->
+    <g transform="translate(16,220)">
+      <rect x="0" y="0" width="300" height="48" rx="10" fill="rgba(4,120,87,0.07)"/>
+      <g transform="translate(22,24)">
+        <circle cx="0" cy="-2.5" r="5.5" fill="none" stroke="#047857" stroke-width="1.4"/>
+        <line x1="-2.5" y1="5" x2="2.5" y2="5" stroke="#047857" stroke-width="1.4" stroke-linecap="round"/>
+        <line x1="-1.5" y1="8" x2="1.5" y2="8" stroke="#047857" stroke-width="1.4" stroke-linecap="round"/>
+      </g>
+      <text x="48" y="22" font-size="14" font-weight="700" fill="#0F172A">idea</text>
+      <text x="48" y="38" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="rgba(15,23,42,0.65)">new wedge to test · <tspan fill="#047857" font-weight="700">3h</tspan></text>
+      <circle class="pulse" cx="284" cy="24" r="4.2" fill="#7C3AED" style="animation-delay:1.5s"/>
+    </g>
+  </g>
+
+  <!-- ===== flow lines: raw context -> vault ===== -->
+  <g stroke="#7C3AED" stroke-opacity="0.45" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path class="flow" d="M316 76  C 348 76,  356 134, 366 148"/>
+    <path class="flow" d="M316 132 C 338 132, 350 146, 362 154" style="animation-delay:0.3s"/>
+    <path class="flow" d="M316 188 C 338 188, 350 176, 362 168" style="animation-delay:0.6s"/>
+    <path class="flow" d="M316 244 C 348 244, 356 186, 366 172" style="animation-delay:0.9s"/>
+  </g>
+
+  <!-- ====================== CENTER: THE VAULT ====================== -->
+  <circle cx="420" cy="158" r="95" fill="url(#vf-glow)"/>
+
+  <!-- purple dots circling the vault -->
+  <g class="spin" opacity="0.5">
+    <circle cx="420" cy="84"  r="4" fill="#7C3AED"/>
+    <circle cx="494" cy="158" r="4" fill="#7C3AED"/>
+    <circle cx="420" cy="232" r="4" fill="#7C3AED"/>
+    <circle cx="346" cy="158" r="4" fill="#7C3AED"/>
+  </g>
+
+  <!-- folder: back body + tab -->
+  <rect x="358" y="118" width="44" height="18" rx="5" fill="#6D28D9"/>
+  <rect x="358" y="128" width="124" height="82" rx="10" fill="#7C3AED"/>
+
+  <!-- .md files dropping in, one per cycle beat -->
+  <g class="file1" transform="translate(381,92) rotate(-8)">
+    <rect x="0" y="0" width="52" height="36" rx="4" fill="#FFFFFF" stroke="rgba(15,23,42,0.15)"/>
+    <text x="6" y="11" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" fill="#7C3AED" font-weight="700">.md</text>
+    <line x1="6" y1="19" x2="44" y2="19" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+    <line x1="6" y1="26" x2="34" y2="26" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+  </g>
+  <g class="file2" transform="translate(408,86) rotate(3)">
+    <rect x="0" y="0" width="52" height="36" rx="4" fill="#FFFFFF" stroke="rgba(15,23,42,0.15)"/>
+    <text x="6" y="11" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" fill="#7C3AED" font-weight="700">.md</text>
+    <line x1="6" y1="19" x2="44" y2="19" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+    <line x1="6" y1="26" x2="34" y2="26" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+  </g>
+  <g class="file3" transform="translate(430,94) rotate(10)">
+    <rect x="0" y="0" width="52" height="36" rx="4" fill="#FFFFFF" stroke="rgba(15,23,42,0.15)"/>
+    <text x="6" y="11" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" fill="#7C3AED" font-weight="700">.md</text>
+    <line x1="6" y1="19" x2="44" y2="19" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+    <line x1="6" y1="26" x2="34" y2="26" stroke="rgba(15,23,42,0.25)" stroke-width="1.4"/>
+  </g>
+
+  <!-- folder front face -->
+  <rect x="358" y="142" width="124" height="68" rx="10" fill="#8B5CF6"/>
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="700">
+    <text x="420" y="164">memory/</text>
+    <text x="420" y="180">decisions/</text>
+    <text x="420" y="196">sop/</text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="420" y="258" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="-0.02em" fill="#0F172A">Vault for Founders</text>
+  <text x="420" y="277" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#7C3AED" text-anchor="middle" letter-spacing="0.22em" font-weight="700">EVERY SESSION · FULL MEMORY</text>
+
+  <!-- ===== flow line: vault -> agent ===== -->
+  <g stroke="#047857" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path class="flow" d="M486 148 C 510 140, 526 134, 546 128" marker-end="url(#vf-arrow)" style="animation-delay:0.5s"/>
+  </g>
+
+  <!-- ====================== RIGHT: CUB + SESSION START ====================== -->
+  <circle cx="596" cy="124" r="41" fill="none" stroke="#7C3AED" stroke-width="2" stroke-opacity="0.5"/>
+  <circle cx="596" cy="124" r="38" fill="#FCF7EE"/>
+  <image x="558" y="86" width="76" height="76" preserveAspectRatio="xMidYMid slice" clip-path="url(#vf-cub)" href="data:image/jpeg;base64,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"/>
+
+  <text x="596" y="186" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Cub · your AI cofounder</text>
+  <text x="596" y="202" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="rgba(15,23,42,0.6)" text-anchor="middle" letter-spacing="0.18em">STARTS WITH FULL CONTEXT</text>
+
+  <!-- session panel -->
+  <g transform="translate(660,64)">
+    <rect x="0" y="0" width="192" height="176" rx="10" fill="rgba(124,58,237,0.07)"/>
+    <text x="12" y="18" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="#7C3AED" letter-spacing="0.22em" font-weight="700">SESSION START</text>
+    <circle class="pulse" cx="178" cy="14" r="4" fill="#7C3AED"/>
+
+    <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="10">
+      <g transform="translate(12,32)">
+        <circle cx="5" cy="4" r="5.5" fill="#047857"/>
+        <path d="M2.4 4.2 L4.4 6.2 L7.8 2.2" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="18" y="8" fill="rgba(15,23,42,0.7)">identity · loaded</text>
+      </g>
+      <g transform="translate(12,54)">
+        <circle cx="5" cy="4" r="5.5" fill="#047857"/>
+        <path d="M2.4 4.2 L4.4 6.2 L7.8 2.2" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="18" y="8" fill="rgba(15,23,42,0.7)">decisions · 214</text>
+      </g>
+      <g transform="translate(12,76)">
+        <circle cx="5" cy="4" r="5.5" fill="#047857"/>
+        <path d="M2.4 4.2 L4.4 6.2 L7.8 2.2" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="18" y="8" fill="rgba(15,23,42,0.7)">lessons · 89</text>
+      </g>
+      <g transform="translate(12,98)">
+        <path class="heartbeat" d="M2 -1 L9 4 L2 9 Z" fill="#047857"/>
+        <text x="18" y="8" fill="#047857" font-weight="700">today's focus · ready</text>
+      </g>
+    </g>
+
+    <line x1="12" y1="122" x2="180" y2="122" stroke="rgba(15,23,42,0.12)" stroke-width="1"/>
+
+    <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="rgba(15,23,42,0.6)">
+      <text x="12" y="140">works with any agent</text>
+      <text x="12" y="158">plain .md · git versioned</text>
+      <text x="12" y="176">yours · <tspan fill="#047857" font-weight="700">0 lock-in</tspan></text>
+    </g>
+  </g>
+
+  <!-- ===== the signature loop: after-action writes memory back ===== -->
+  <text x="664" y="254" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="#B45309" text-anchor="middle" letter-spacing="0.18em" font-weight="700">AFTER ACTION · WRITTEN BACK</text>
+  <g stroke="#B45309" stroke-opacity="0.7" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path class="flow-slow" d="M756 240 C 756 264, 648 272, 576 264 C 528 258, 500 234, 486 206" marker-end="url(#vf-arrow-back)"/>
+  </g>
+</svg>
